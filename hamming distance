@@ -1,0 +1,13 @@
+class Solution {
+    public int hammingDistance(int x, int y) {
+        int sum=0;
+        int c=x^y;
+        while(c!=0)
+        {
+            sum+=c & 1;
+            c >>=1;
+        }
+        return sum;
+        
+    }
+}
